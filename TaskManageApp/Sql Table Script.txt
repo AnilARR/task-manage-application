@@ -1,0 +1,17 @@
+Create Database TaskManagerDB;
+USE TaskManagerDB;
+
+CREATE TABLE Tasks
+(
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    TaskName NVARCHAR(255) NOT NULL,
+    Description NVARCHAR(MAX),
+    DueDate DATETIME NOT NULL,
+    IsCompleted BIT NOT NULL
+);
+
+---dummy entry for testing purpose
+INSERT INTO Tasks (TaskName, Description, DueDate, IsCompleted) 
+VALUES ('Task 1', 'This is task 1 description', '2023-01-01', 0), 
+('Task 2', 'This is task 2 description', '2023-02-01', 0), 
+('Task 3', 'This is task 3 description', '2023-03-01', 1);

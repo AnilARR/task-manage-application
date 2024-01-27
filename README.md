@@ -24,6 +24,7 @@ Open the taskService.ts file.
 Update the apiUrl variable with the correct API URL based on your local machine setup.
 Step 6: Run Angular Application
 Execute the following command in the terminal within the Angular project directory:
+npm install
 ng build
 
 bash
